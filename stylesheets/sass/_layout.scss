@@ -7,6 +7,9 @@
   float: left;
   margin-right: 2%;
   padding-top: 45px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 20%;
 }
 
