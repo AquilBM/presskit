@@ -1,29 +1,9 @@
 @import url(../stylesheets/normalize.css);
-@font-face {
-  font-family: "Calibre";
-  src: url("../fonts/CalibreWeb-Regular.woff2") format("woff2"), url("../fonts/CalibreWeb-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: "Calibre";
-  src: url("../fonts/CalibreWeb-RegularItalic.woff2") format("woff2"), url("../fonts/CalibreWeb-RegularItalic.woff") format("woff");
-  font-style: italic;
-  font-weight: 400; }
-@font-face {
-  font-family: "Calibre";
-  src: url("../fonts/CalibreWeb-Medium.woff2") format("woff2"), url("../fonts/CalibreWeb-Medium.woff") format("woff");
-  font-style: normal;
-  font-weight: 500; }
-@font-face {
-  font-family: "Calibre";
-  src: url("../fonts/CalibreWeb-MediumItalic.woff2") format("woff2"), url("../fonts/CalibreWeb-MediumItalic.woff") format("woff");
-  font-style: italic;
-  font-weight: 500; }
 button, [type='button'], [type='reset'], [type='submit'],
 .button {
   appearance: none;
   border: 2px solid #ed3e44;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ed3e44;
   color: #fff;
   cursor: pointer;
@@ -44,8 +24,28 @@ button, [type='button'], [type='reset'], [type='submit'],
   .button:focus {
     background-color: #f05b60;
     border-color: #f05b60;
-    color: white; }
+    color: #fff; }
 
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/CalibreWeb-Regular.woff2") format("woff2"), url("../fonts/CalibreWeb-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/CalibreWeb-RegularItalic.woff2") format("woff2"), url("../fonts/CalibreWeb-RegularItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400; }
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/CalibreWeb-Medium.woff2") format("woff2"), url("../fonts/CalibreWeb-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/CalibreWeb-MediumItalic.woff2") format("woff2"), url("../fonts/CalibreWeb-MediumItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 500; }
 fieldset {
   background-color: transparent;
   border: 0;
@@ -69,38 +69,33 @@ textarea {
   font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 1em; }
 
-[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea,
-select[multiple] {
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  appearance: none;
   background-color: #fff;
   border: 1px solid #b5b5c0;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   margin-bottom: 0.75em;
   padding: 0.5em;
   transition: border-color 150ms ease;
   width: 100%; }
-  [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover,
-  select[multiple]:hover {
+  [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
     border-color: #91919a; }
-  [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus,
-  select[multiple]:focus {
+  [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
     border-color: #ed3e44;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(235, 39, 45, 0.7);
     outline: none; }
-  [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled,
-  select[multiple]:disabled {
+  [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
     background-color: #f2f2f2;
     cursor: not-allowed; }
-    [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
-    select[multiple]:disabled:hover {
+    [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
       border: 1px solid #b5b5c0; }
+  [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
+    color: #8f8f91; }
 
 textarea {
   resize: vertical; }
-
-[type="search"] {
-  appearance: none; }
 
 [type="checkbox"],
 [type="radio"] {
@@ -113,8 +108,7 @@ textarea {
 
 select {
   margin-bottom: 0.75em;
-  max-width: 100%;
-  width: auto; }
+  width: 100%; }
 
 html {
   box-sizing: border-box; }
@@ -124,9 +118,12 @@ html {
 *::after {
   box-sizing: inherit; }
 
+html,
+body {
+  height: 100%; }
+
 ul,
 ol {
-  font-size: 1.25em;
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -135,7 +132,7 @@ dl {
   margin: 0; }
 
 dt {
-  font-weight: 600;
+  font-weight: 500;
   margin: 0; }
 
 dd {
@@ -171,11 +168,9 @@ th {
   vertical-align: middle; }
 
 body {
-  background-color: #fff;
   color: #454547;
   font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 1em;
-  -webkit-font-smoothing: antialiased;
   line-height: 1.5; }
 
 h1,
@@ -184,7 +179,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #29292c;
   font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -269,6 +263,7 @@ header {
 nav a {
   color: #454547;
   display: inline-block;
+  font-size: 1.25em;
   font-weight: 500;
   padding: 10px;
   position: relative;
@@ -292,7 +287,7 @@ img {
 .button--download-assets {
   appearance: none;
   border: 2px solid #ed3e44;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ed3e44;
   color: #fff;
   cursor: pointer;
@@ -313,7 +308,7 @@ img {
   .button--download-assets:hover, .button--download-assets:focus {
     background-color: #f05b60;
     border-color: #f05b60;
-    color: white; }
+    color: #fff; }
   .button--download-assets::before {
     position: relative;
     top: 3px;
@@ -330,7 +325,7 @@ img {
 .button--github {
   appearance: none;
   border: 2px solid #9b9aa1;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #9b9aa1;
   color: #fff;
   cursor: pointer;
@@ -351,7 +346,7 @@ img {
   .button--github:hover, .button--github:focus {
     background-color: #aaa9af;
     border-color: #aaa9af;
-    color: white; }
+    color: #fff; }
   .button--github::before {
     position: relative;
     top: 3px;

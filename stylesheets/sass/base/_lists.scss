@@ -1,6 +1,5 @@
 ul,
 ol {
-  font-size: $base-font-size * 1.25;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ dl {
 }
 
 dt {
-  font-weight: 600;
+  font-weight: $medium-font-weight;
   margin: 0;
 }
 

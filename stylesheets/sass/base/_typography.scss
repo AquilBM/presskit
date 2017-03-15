@@ -1,9 +1,7 @@
 body {
-  background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
 }
 
@@ -13,7 +11,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: $heading-font-color;
   font-family: $heading-font-family;
   font-weight: $medium-font-weight;
   line-height: $heading-line-height;
